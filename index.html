@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <body>
-        Query
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-        Image
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="submit" value="Google Search">
-        </form>
-        Advanced Search
-        <form action="https://www.google.com/search">
-            all these words: <input type="text" name="as_q">
-            <br>
-            this exact word or phrase: <input type="text" name="as_epq">
-            <br>
-            any of these words: <input type="text" name="as_oq">
-            <br>
-            none of these words: <input type="text" name="as_eq">
-            <br>
-            <input type="submit" value="Google Search">
-        </form>
-        I'm Feeling Lucky
-        <form  action="https://google.com/search">
-            <input type="text" name="q" >
-            <input type="hidden" name="iflsig">
-            <input type="submit" value="Google Search">
-            <input type="submit" name="btnI" value="I'm Feeling Lucky">
-         </form>
-    </body>
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <img id="logo" src="Google.png">
+
+    <form id="search-and-lucky" action="https://google.com/search">
+        <input class="inputbox" type="text" name="q">
+        <br>
+        <br>
+        <br>
+        <input type="hidden" name="iflsig">
+        <input id="sub" type="submit" value="Google Search"> &nbsp;&nbsp;&nbsp; <input id="sub" type="submit" name="btnI" value="I'm Feeling Lucky">
+    </form>
+
+
+
+
+    
+    Image Search
+    <form action="https://google.com/search">
+        <input type="text" name="q">
+        <input type="hidden" name="tbm" value="isch">
+        <input type="submit" value="Google Search">
+    </form>
+    Advanced Search
+    <form action="https://www.google.com/search">
+        all these words: <input type="text" name="as_q">
+        <br>
+        this exact word or phrase: <input type="text" name="as_epq">
+        <br>
+        any of these words: <input type="text" name="as_oq">
+        <br>
+        none of these words: <input type="text" name="as_eq">
+        <br>
+        <input type="submit" value="Google Search">
+    </form>
+</body>
+
 </html>
