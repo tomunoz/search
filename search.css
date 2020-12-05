@@ -1,0 +1,41 @@
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -100px;
+    height: 60%;
+    width: 60%;
+}
+
+#search-and-lucky {
+    margin: auto;
+    text-align: center;
+}
+
+.inputbox {
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    height: 40px;
+    width: 500px;
+}
+
+.inputbox:hover {
+    border: 1px solid lightslategray;
+}
+
+input[type="submit"] {
+    border: 0px;
+    height: 30px;
+    width: 120px;
+}
+
+input:focus {
+    background-color: lightgray;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid lightgray;
+}
+
