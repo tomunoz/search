@@ -1,10 +1,11 @@
+
+/* General formatting for body section */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-hr.solid {
-    border-top: 1px solid #f0edeb;
-  }
+  /* Google logo images for each page */
 
 #searchlogo {
     display: block;
@@ -25,9 +26,11 @@ hr.solid {
 }
 
 #advancedlogo {
-    height: 40px;
-    width: 120px;
+    height: 35px;
+    width: 95px;
 }
+
+/* Placement and behavior of inputs forms for search, feeling lucky, and images (not Advanced Search) */
 
 #search-and-lucky {
     margin: auto;
@@ -64,10 +67,7 @@ input[type="submit"]:hover {
     border: 1px solid lightgray;
 }
 
-.searchnav {
-    text-align: right;
-    vertical-align: middle;
-}
+/* URL links at top right of page to other search pages */
 
 a {
     color: black;
@@ -80,6 +80,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Flexbox container definition and positioning for fields in Advanced Search page */
+
 .flex-container {
     display: flex;
 }
@@ -90,68 +92,84 @@ a:hover {
 }
 
 .leftcolumn {
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 180px;
 }
 
 .middlecolumn {
-    flex-grow: 1;
-    width: 50%;
-    border: 1px solid lightgray;
+    flex: 1;
+ /*   width: 50%; */
 }
 
 .rightcolumn {
-    flex-grow: 1;
-    width: 35%;
+    flex: 1;
+/*    width: 35%; */
 }
+
+.middlecolumninput {
+    width: 450px;
+}
+
+/* Nav border at top of Search and Images Search page (not Advanced Search) */
+
+.searchnav {
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* Nav border at top of Advanced Search page */
 
 .flexsearchnav {
     display: flex;
     background-color: #f0edeb;
     align-items: center;
+    height: 55px;
 }
-
-/*
-.flexsearchnav>div {
-    width: 100%;
-    line-height: 40px;
-    font-size: 14px;
-    background-color: #f0edeb;
-    display: inline-block;
-}
-*/
-/*
-.leftnav {
-    text-align: left;
-}
-*/
 
 .middlenav {
     margin-left: auto;
 }
 
-/*
-.rightnav {
-    text-align: right;
-    vertical-align: middle;
-}
-*/
+/* "Advanced Search" header title above search fields in Advanced Search page */
+
 h3 {
     color: crimson;
     font-weight: normal;
     padding-left: 40px;
+    font-size: 20px;
 }
+
+/* Horizontal divider line above search fields in Advanced Search page */
+
+hr.solid {
+    border-top: 1px solid #f0edeb;
+  }
+
+/* Padding on left side for search fieds content in Advanced Search page */
 
 #allcontent {
     padding-left: 40px;
 }
 
 .middlecolumnsubmit {
+    width: 450px;
     text-align: right;
-    width: 50%;
 }
 
-.middlecolumnsubmit.input[type="submit"] {
-    background-color: blue;
+.middlecolumnsub {
     color: white;
+    background-color: #4985de;
+}
+
+/* Make right column of Advanced Search disappear when screen size is less than some walue */
+@media screen and (max-width: 1150px) {
+    .rightcolumn {
+      display: none;
+    }
+    .leftcolumn {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
 }
