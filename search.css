@@ -1,6 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+hr.solid {
+    border-top: 1px solid #f0edeb;
+  }
 
-#logo {
+#searchlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -9,7 +15,26 @@
     width: 60%;
 }
 
+#imagelogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    height: 30%;
+    width: 30%;
+}
+
+#advancedlogo {
+    height: 40px;
+    width: 120px;
+}
+
 #search-and-lucky {
+    margin: auto;
+    text-align: center;
+}
+
+#imageform {
     margin: auto;
     text-align: center;
 }
@@ -41,6 +66,7 @@ input[type="submit"]:hover {
 
 .searchnav {
     text-align: right;
+    vertical-align: middle;
 }
 
 a {
@@ -52,4 +78,80 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.leftcolumn {
+    flex-grow: 1;
+    width: 180px;
+}
+
+.middlecolumn {
+    flex-grow: 1;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+.rightcolumn {
+    flex-grow: 1;
+    width: 35%;
+}
+
+.flexsearchnav {
+    display: flex;
+    background-color: #f0edeb;
+    align-items: center;
+}
+
+/*
+.flexsearchnav>div {
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #f0edeb;
+    display: inline-block;
+}
+*/
+/*
+.leftnav {
+    text-align: left;
+}
+*/
+
+.middlenav {
+    margin-left: auto;
+}
+
+/*
+.rightnav {
+    text-align: right;
+    vertical-align: middle;
+}
+*/
+h3 {
+    color: crimson;
+    font-weight: normal;
+    padding-left: 40px;
+}
+
+#allcontent {
+    padding-left: 40px;
+}
+
+.middlecolumnsubmit {
+    text-align: right;
+    width: 50%;
+}
+
+.middlecolumnsubmit.input[type="submit"] {
+    background-color: blue;
+    color: white;
 }
